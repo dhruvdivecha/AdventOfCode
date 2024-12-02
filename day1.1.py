@@ -3,7 +3,7 @@ import itertools
 
 
 def distance():
-    with open("input.txt") as file:
+    with open("input1.1.txt") as file:
         data = file.readlines()
     
     digitOne = []
