@@ -13,7 +13,6 @@ def safety():
 
 
 def check_safety(numbers):
-        print(numbers)
         for i in range(len(numbers) - 1):
             diff = numbers[i] - numbers[i + 1]
 
