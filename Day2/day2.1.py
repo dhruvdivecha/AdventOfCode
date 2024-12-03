@@ -6,19 +6,19 @@ def safety():
 
     for line in data:
         numbers = list(map(int, line.strip().split()))
-        check_safety(numbers)
-        counter += 1
+        if check_safety(numbers):
+            counter += 1
     
     print(counter)
 
 
-def check_safety(numbers):
-        for i in range(len(numbers) - 1):
-            diff = numbers[i] - numbers[i + 1]
+def check_safety(number):
+        for i in range(len(number) - 1):
+            diff = number[i] - number[i + 1]
 
             prev_diff = 0
 
-            if numbers[i] == numbers[i + 1]:
+            if number[i] == number[i + 1]:
                 return False
                 
 
